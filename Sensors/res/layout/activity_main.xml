@@ -1,0 +1,98 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+     
+ 
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+     <Button
+        android:id="@+id/choseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/chose" />        
+    	</TableRow>
+    	<TableRow	
+    	    android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    <Button
+        android:id="@+id/button1"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/scan" 
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/show" 
+        android:visibility="invisible"
+        />
+	</TableRow>
+	<TableRow	
+    	    android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="40" 
+        android:visibility="invisible"/>
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="40"
+        android:visibility="invisible" 
+        android:inputType="text">
+        
+     </EditText>
+     </TableRow>
+     <TableRow	
+    	    android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >   
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:visibility="invisible"
+        />
+    </TableRow>
+    <TableRow	
+    	    android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >  
+     <TextView
+        android:id="@+id/y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:visibility="invisible"
+        />
+    </TableRow>
+    <TableRow	
+    	    android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >  
+    <TextView
+        android:id="@+id/z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:visibility="invisible"
+        />
+     </TableRow>
+</TableLayout>
+   

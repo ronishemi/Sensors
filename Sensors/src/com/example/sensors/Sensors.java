@@ -65,7 +65,7 @@ public class Sensors extends Activity {
 					Toast.LENGTH_LONG).show();
 		final String[] values = new String[sensors.size() + 1];
 		int i = 0;
-		Iterator it = sensors.iterator();
+		Iterator<Sensor> it = sensors.iterator();
 		while (it.hasNext()) {
 			Sensor sen = (Sensor) it.next();
 			values[i++] = sen.getName();
@@ -122,9 +122,11 @@ public class Sensors extends Activity {
 			// Get default sensor. return null if none
 			defSensor = sensorManager.getDefaultSensor(sensors.get(position)
 					.getType());
+			if(defSensor != null){
 			sensorManager.registerListener(listener, defSensor,
 					sensorManager.SENSOR_DELAY_NORMAL);
 			viewText.setText(defSensor.getName() + "\n\n");
+			}
 		} else
 			setScane();
 	}
